@@ -1,0 +1,12 @@
+person:
+  name: bob
+  age: 18
+  man: true
+  birth: 1998/5/29
+  maps: {k1:v1,k2:v2}
+  lists:
+    - list
+    - zhaoliu
+  cat:
+    name: mao
+    age: 2

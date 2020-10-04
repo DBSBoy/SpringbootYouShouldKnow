@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>成功页面</title>
+</head>
+<body>
+<h1>Are you ok?</h1>
+<!--th:text就是将元素里面的内容设置为获取值-->
+<div th:text="${aw}"></div>
+<hr/>
+<h3 th:text="${stu}" th:each="s:${stu}"></h3><!--each在哪个标签里面每次遍历都会生成这个标签一次-->
+<hr/>
+<h4>
+    <span th:each="st:${stu}">[[${st}]]</span><!--这样可以不用每次写text-->
+</h4>
+
+</body>
+</html>
